@@ -1,0 +1,91 @@
+
+<html>
+<head>
+   
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body>
+	   
+<?php include 'myfirstprogram.php';
+
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
+echo "<table style='font-size: .5em;'>";
+for ($i = 1; $i < 101; $i++){
+
+	echo "<tr> \n";
+	
+	for ($j=1; $j < 101; $j++){
+	
+		$x = $i * $j;
+		echo "<td>$x</td> \n";
+	}
+
+	echo "</tr>";
+
+}
+
+echo "</table>";
+
+
+?>
+  <p>Hi, Im Darrin</p>
+
+
+<h1>Quiz Exercise</h1>
+<br>
+<form action="quiz.php" method="post">
+
+	<li>
+		<h3>My name is?</h3>
+	
+		<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+   	        <label for="question-1-answers-A">A) John </label>	 
+
+		<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+ 	       <label for="question-1-answers-A">B) Brandon </label>
+
+		<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+       		 <label for="question-1-answers-A">C) Kayle </label>
+
+		<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+       		 <label for="question-1-answers-A">D) Darrin </label>
+
+
+	</li>
+	<li>
+                
+
+
+
+
+
+
+</form>
+                    <h3>CSS Stands for...</h3>
+                    
+    <script src="proj.js"></script> </body> </html>
+                    
+                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+                        <label for="question-1-answers-A">A) Computer Styled Sections </label>
+                    
+                    
+                    
+                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+                        <label for="question-1-answers-B">B) Cascading Style Sheets</label>
+                    
+                    
+                    
+                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+                        <label for="question-1-answers-C">C) Crazy Solid Shapes</label>
+                    
+                    
+                    
+                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+                        <label for="question-1-answers-D">D) None of the above</label>
+                    
+                
+                </li>

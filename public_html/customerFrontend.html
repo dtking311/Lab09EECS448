@@ -1,0 +1,68 @@
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+
+  <h1>EECS Exercise 3 - Web Store</h1>
+
+  <h2>Virus Protection Software Order</h2>
+  
+  <form action="customerBackend.php" method="post" id="theForm">
+
+
+		<div>
+			<h3>How long of a subscription would you like to purchase?</h3>
+                    
+                        <input type="radio" name="q1" id="q1-A" value="A" />
+                        <label for="q1-A" class="Option1">One Year - $29.99</label>
+                    
+                    
+                    
+                        <input type="radio" name="q1" id="q1-B" value="B" />
+                        <label for="q1-B" class="Option2">Two Years - $39.99</label>
+                    
+                    
+                    
+                        <input type="radio" name="q1" id="q1-C" value="C" />
+						<label for="q1-C" class="Option3">Three Years - $49.99</label>
+						
+		</div>
+		<div>
+
+			<h3>Shipping Options: (Disk comes in mail... because I guess this is 1997)</h3>
+
+					<input type="radio" name="q2" id="q2-A" value="A" />
+					<label for="q1-A" class="Option1">Standard Free Shipping - $0.00</label>
+		
+		
+		
+					<input type="radio" name="q2" id="q2-B" value="B" />
+					<label for="q1-B" class="Option2">Three Day Shipping - $5.00</label>
+		
+		
+		
+					<input type="radio" name="q2" id="q2-C" value="C" />
+					<label for="q1-C" class="Option3">Over Night Shipping - $50.00</label>
+
+		</div>
+		<div>
+			<h3>User Info:</h3>
+
+					Username: <input type="text" class="textb" id="name" name="name"><br><br>
+					Password: <input type="text" id="pass" class="textb" name="pass"><br><br>
+		</div>
+
+		<button type="button" onclick="clearinputs()">Reset</button>
+		<button type="button" onclick="checkinputs()">Submit Order</button>
+		
+
+  </form>
+
+    <script src="formChecker.js"></script>
+</body>
+</html>

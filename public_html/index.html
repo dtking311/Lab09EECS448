@@ -1,0 +1,188 @@
+
+<html>
+<head>
+   
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body>
+
+<h1>Lab 09 - EECS 448</h1>
+<h3>Exercises 1 and 2 shown below..</h3>
+<a href="customerFrontend">Click here to go to Exercise 3!</a>
+<br>	   
+<?php include 'myfirstprogram.php';
+
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
+echo "<table style='font-size: .5em;'>";
+for ($i = 1; $i < 101; $i++){
+
+	echo "<tr> \n";
+	
+	for ($j=1; $j < 101; $j++){
+	
+		$x = $i * $j;
+		echo "<td>$x</td> \n";
+	}
+
+	echo "</tr>";
+
+}
+
+echo "</table>";
+
+
+?>
+  <p>Hi, Im Darrin</p>
+
+
+
+
+
+<form action="quiz.php" method="post" id="quiz">
+		
+
+
+
+            <ol>
+            
+		<li>
+                
+                    <h3>My name is?</h3>
+                    
+
+                        <input type="radio" name="q1" id="q1-A" value="A" />
+                        <label for="q1-A">A) John </label>
+                    
+                    
+                    
+                        <input type="radio" name="q1" id="q1-B" value="B" />
+                        <label for="q1-B">B) Brandon</label>
+                    
+                    
+                    
+                        <input type="radio" name="q1" id="q1-C" value="C" />
+                        <label for="q1-C">C) Kayle</label>
+                    
+                    
+                    
+                        <input type="radio" name="q1" id="q1-D" value="D" />
+                        <label for="q1-D">D) Darrin</label>
+                    
+                
+                </li>
+                
+                <li>
+                
+                    <h3>KU is in what state?</h3>
+                    
+                    
+                        <input type="radio" name="q2" id="q2-A" value="A" />
+                        <label for="q2-A">A) Iowa </label>
+                    
+                    
+                    
+                        <input type="radio" name="q2" id="q2-B" value="B" />
+                        <label for="q2-B">B) Kansas</label>
+                    
+                    
+                    
+                        <input type="radio" name="q2" id="q2-C" value="C" />
+                        <label for="q2-C">C) South Dakota</label>
+                    
+                    
+                    
+                        <input type="radio" name="q2" id="q2-D" value="D" />
+                        <label for="q2-D">D) Colorado</label>
+                    
+                
+                </li>
+                
+                <li>
+                
+                    <h3>When is breakfest eaten?</h3>
+                    
+                    
+                        <input type="radio" name="q3" id="q3-A" value="A" />
+                        <label for="q3-A">A) Morning </label>
+                    
+                    
+                    
+                        <input type="radio" name="q3" id="q3-B" value="B" />
+                        <label for="q3-B">B) Noon</label>
+                    
+                    
+                    
+                        <input type="radio" name="q3" id="q3-C" value="C" />
+                        <label for="q3-C">C) Sunset</label>
+                    
+                    
+                    
+                        <input type="radio" name="q3" id="q3-D" value="D" />
+                        <label for="q3-D">D) Midnight</label>
+                    
+                
+                </li>
+                
+                <li>
+                
+                    <h3>What has four wheels?</h3>
+                    
+                    
+                        <input type="radio" name="q4" id="q4-A" value="A" />
+                        <label for="q4-A">A) Bicycle </label>
+                    
+                    
+                    
+                        <input type="radio" name="q4" id="q4-B" value="B" />
+                        <label for="q4-B">B) Tricycle</label>
+                    
+                    
+                    
+                        <input type="radio" name="q4" id="q4-C" value="C" />
+                        <label for="q4-C">C) Car</label>
+                    
+                    
+                    
+                        <input type="radio" name="q4" id="q4-D" value="D" />
+                        <label for="q4-D">D) Unicycle</label>
+                    
+                
+                </li>
+                
+                <li>
+                
+                    <h3>Which of the following is an animal?</h3>
+                    
+                    
+                        <input type="radio" name="q5" id="q5-A" value="A" />
+                        <label for="q5-A">A) Grass </label>
+                    
+                    
+                    
+                        <input type="radio" name="q5" id="q5-B" value="B" />
+                        <label for="q5-B">B) Pond</label>
+                    
+                    
+                    
+                        <input type="radio" name="q5" id="q5-C" value="C" />
+                        <label for="q5-C">C) Deer</label>
+                    
+                    
+                    
+                        <input type="radio" name="q5" id="q5-D" value="D" />
+                        <label for="q5-D">D) Sidewalk</label>
+                    
+                
+                </li>
+
+
+		<input type="submit" value="Submit Quiz" />
+		
+		</form>
+
+		</body>
+		</html>
